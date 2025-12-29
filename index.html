@@ -36,10 +36,10 @@
 
     <main>
         <section class="hero">
-            <video autoplay muted loop id="hero-video">
-                <source src="https://mixkit.co/free-stock-video/city-busy-traffic-intersection-time-lapse-1755.mp4" type="video/mp4">
-     
-                <!-- source src="https://assets.mixkit.co/videos/preview/mixkit-pressure-washing-a-dirty-patio-3331-large.mp4" type="video/mp4" -->
+            <video autoplay muted loop id="hero-video" playsinline poster="assets/download.jpeg">
+                <!-- Prefer a local copy if present (assets/hero.mp4). If not, the remote source will be used as fallback. -->
+                <source src="assets/hero.mp4" type="video/mp4">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-pressure-washing-a-dirty-patio-3331-large.mp4" type="video/mp4">
             </video>
             <div class="hero-content">
                 <h1>We Don’t Just Clean. We Restore.</h1>
@@ -147,9 +147,11 @@
         <section id="portfolio" class="portfolio-section animated-section">
             <h2>Proof of Our Shine</h2>
             <div class="ba-slider">
-                <img src="https://plus.unsplash.com/premium_photo-1670507980364-6997ac734062?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Before">
+                <!-- Local 'download.jpeg' placeholder (embedded small JPEG). Replace with your real image at assets/download.jpeg -->
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUQEBAVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKABJAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwIBB//EAD8QAAIBAgQDBgQEBQMDBQAAAAECAwQRAAUSIRMxQVEGImFxgZGh8BMiscHRQlJy0RUjQ4KSsuHxFkNzcoOy/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEBAAICAgIBBAMAAAAAAAAAAAECEQMhEjFBURMiYXGBsfAFE//aAAwDAQACEQMRAD8A9xREQEREBERAREQEREBERAREQERED/2Q==" alt="Before">
                 <div class="resize">
-                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="After">
+                    <!-- After image (embedded small JPEG). Replace with your real "after" image -->
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBUQEBAVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKABJAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwIBB//EAD8QAAIBAgQDBgQEBQMDBQAAAAECAwQRAAUSIRMxQVEGImFxgZGh8BMiscHRQlJy0RUjQ4KSsuHxFkNzcoOy/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEBAAICAgIBBAMAAAAAAAAAAAECEQMhEjFBURMiYXGBsfAFE//aAAwDAQACEQMRAD8A9xREQEREBERAREQEREBERAREQERED/2Q==" alt="After">
                 </div>
                 <span class="handle"></span>
             </div>
