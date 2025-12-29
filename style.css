@@ -6,6 +6,42 @@ body {
     padding: 0;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo svg {
+    display: block;
+    height: 42px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00174f;
+    font-weight: 600;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 0.18s ease, color 0.18s ease, transform 0.12s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(0,191,255,0.08);
+    color: #002a6f;
+    transform: translateY(-2px);
+}
+
 .hero {
     position: relative;
     height: 100vh;
@@ -95,6 +131,38 @@ body {
 .services-section {
     padding: 4rem 2rem;
     text-align: center;
+}
+
+.about-section {
+    padding: 3.5rem 2rem;
+    text-align: center;
+}
+
+.about-section .lead {
+    max-width: 900px;
+    margin: 0.5rem auto 1.5rem;
+    color: #16325c;
+    font-size: 1.1rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-card {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(3,12,38,0.06);
+    color: #0b3266;
+}
+
+@media (max-width: 800px) {
+    .main-nav { padding: 0.8rem 1rem; }
+    .nav-links { gap: 0.8rem; }
 }
 
 .services-section h2 {

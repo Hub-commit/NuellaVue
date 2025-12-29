@@ -8,9 +8,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">NuellaVue</div>
-            <ul>
+        <nav class="main-nav">
+            <div class="logo">
+                <!-- Simple inline SVG logo: a sparkle + wordmark -->
+                <svg width="160" height="42" viewBox="0 0 320 84" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NuellaVue logo">
+                    <defs>
+                        <linearGradient id="g1" x1="0" x2="1">
+                            <stop offset="0%" stop-color="#00f0ff" />
+                            <stop offset="100%" stop-color="#00bfff" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(8,8)">
+                        <polygon points="10,28 18,36 26,28 18,20" fill="#00ffff" opacity="0.95" />
+                        <circle cx="50" cy="28" r="12" fill="url(#g1)" opacity="0.12" />
+                        <text x="78" y="36" font-family="Montserrat, sans-serif" font-weight="700" font-size="36" fill="#00174f">NuellaVue</text>
+                    </g>
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -27,6 +43,27 @@
                 <h1>We Don’t Just Clean. We Restore.</h1>
                 <p>Specialized Deep Cleaning for Completed Buildings & Events.</p>
                 <button class="cta-button" id="hero-cta">Request a Deep Clean</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section animated-section">
+            <div class="container">
+                <h2>About NuellaVue</h2>
+                <p class="lead">NuellaVue — "The Satisfying Clean" — is a premium deep-cleaning agency specialising in restoring completed buildings and event spaces to showroom condition. We combine industry-grade equipment, trained teams, and a relentless attention to detail to make surfaces gleam and spaces feel brand new.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Our Mission</h3>
+                        <p>To deliver dependable, professional deep-cleaning services that restore built environments, safeguard occupants, and create that instantly gratifying clean every client loves.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Our Vision</h3>
+                        <p>To be the most trusted deep-clean partner across residential, commercial and event sectors — synonymous with quality, safety and stunning results.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Why Choose Us</h3>
+                        <p>Specialised teams, sterilisation protocols for sensitive sites, transparent costing via WhatsApp, and a portfolio of before/after transformations that prove our craft.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
